@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: boufrouk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/02/17 23:24:11 by boufrouk          #+#    #+#             */
+/*   Updated: 2023/02/17 23:24:22 by boufrouk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "get_next_line.h"
 #include <fcntl.h>
@@ -100,13 +111,13 @@ char	*get_next_line(int fd)
 	return (ln);
 }
 
-int main(){
-	int fd ;
-	fd = open("hH",O_RDONLY,777);
-	 //char *tan = get_next_line(fd);
-	 //while (get_next_line(fd))
-	 //{
-	 	printf("%s", get_next_line(fd));
-	 //}
-	return 0;
-}
+// int main(){
+// 	int fd ;
+// 	fd = open("hH",O_RDONLY,777);
+// 	 //char *tan = get_next_line(fd);
+// 	 //while (get_next_line(fd))
+// 	 //{
+// 	 	printf("%s", get_next_line(fd));
+// 	 //}
+// 	return 0;
+// }
