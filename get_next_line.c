@@ -19,13 +19,13 @@ char	*readili(int fd, char *tmp)
 	int		i;
 	char	*buf;
 
-	buf = malloc(10 + 1);
+	buf = malloc(BUFFER_SIZE + 1);
 	if (!buf)
 		return (NULL);
 	i = 1;
 	while (!ft_strchr(tmp, '\n') && i)
 	{
-		i = read(fd, buf, 10);
+		i = read(fd, buf, BUFFER_SIZE);
 		if (i == -1 || (tmp[0] == 0 && i == 0))
 		{
 			free(buf);
@@ -111,13 +111,17 @@ char	*get_next_line(int fd)
 	return (ln);
 }
 
-// int main(){
-// 	int fd ;
-// 	fd = open("hH",O_RDONLY,777);
-// 	 //char *tan = get_next_line(fd);
-// 	 //while (get_next_line(fd))
-// 	 //{
-// 	 	printf("%s", get_next_line(fd));
-// 	 //}
-// 	return 0;
-// }
+int main(){
+	int fd ;
+	fd = open("hH",O_RDONLY,777);
+	//  while (get_next_line(fd))
+	//  {
+	 	printf("%s", get_next_line(fd));
+		// printf("%s", get_next_line(fd));
+		// printf("%s", get_next_line(fd));
+		// printf("%s", get_next_line(fd));
+		// printf("%s", get_next_line(fd));
+
+		system("leaks a.out");
+	return 0;
+}
