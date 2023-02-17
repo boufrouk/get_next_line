@@ -5,6 +5,8 @@
 # include <unistd.h>
 
 char	*get_next_line(int fd);
+char	*readili(int fd, char *tmp);
+char	*rest(char *tmp);
 char	*ft_strdup(char *s1);
 char	*ft_strjoin(char *s1, char *s2);
 int		ft_strchr(char *s, char c);
