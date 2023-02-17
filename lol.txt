@@ -1,0 +1,8 @@
+123 456789 123456789 123456789 123456789
+123456789 
+printf("%s", get_next_line(fd));
+printf("%s", get_next_line(fd));printf("%s", get_next_line(fd));printf("%s", get_next_line(fd));printf("%s", get_next_line(fd));printf("%s", get_next_line(fd));
+
+
+
+
